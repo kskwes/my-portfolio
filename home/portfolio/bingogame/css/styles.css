@@ -1,0 +1,108 @@
+body {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Courier New', monospace;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 25px auto 0;
+}
+
+.container {
+  font-size: 18px;
+  width: 500px;
+  height: auto;
+  margin: 20px auto 0;
+  display: grid;
+  grid-template-rows: 80px 80px 80px;
+  grid-template-columns: 80px 80px 80px;
+  justify-content: center;
+  align-content: start;
+}
+
+#item-1,
+#item-2,
+#item-3,
+#item-4,
+#item-5,
+#item-6,
+#item-7,
+#item-8,
+#item-9
+ {
+  border: 1px solid #333;
+  text-align: center;
+  line-height: 80px;
+}
+
+#number {
+  font-size: 25px;
+  width: 100px;
+  height: 30px;
+  margin: 20px auto;
+  padding: 10px 10px;
+  border: 1px solid #eee;
+}
+
+.btn {
+  width: 200px;
+  margin: 0 auto 10px;
+  background: #eee;
+  padding: 5px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.colored {
+  background: #333;
+  color: #fff;
+}
+
+#close {
+  font-size: 15px;
+  cursor: pointer;
+  width: 90px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 7px 0;
+  margin: 16px auto 0;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#modal {
+  background: #fff;
+  width: 300px;
+  padding: 20px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.4s;
+  z-index: 2;
+}
+
+#modal p {
+  font-size: 45px;
+  margin: 0 0 20px;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+#modal.hidden {
+  transform: translate(0, -500px);
+}

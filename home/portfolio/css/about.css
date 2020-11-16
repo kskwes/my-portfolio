@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+
+/* Common */
+header {
+  margin-bottom: 35px;
+}
+
+.main-wrapper {
+  padding-bottom: 30px;
+}
+
+.about-img {
+  width: 500px;
+  margin: 0 auto 30px;
+  text-align: right;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+.about-img p {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.about-img span {
+  font-size: 15px;
+  color: #a5a5a5;
+}
+
+dl.desc-wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+dl.desc-wrapper dt{
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+dl.desc-wrapper dd{
+  font-size: 23px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  text-align: left;
+}

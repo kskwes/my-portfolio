@@ -1,0 +1,333 @@
+/* Common */
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+#mask {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.top-title {
+  text-align: center;
+}
+
+.header {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.header #menu-list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 0;
+  box-sizing: border-box;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+.header #menu-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.header #menu-list ul li {
+  font-size: 19px;
+}
+.header #menu-list a {
+  color: #e5127d;
+  text-decoration: none;
+}
+span.list-icon {
+  font-size: 10px;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* SP */
+@media screen and (max-width: 768px) {
+  .all-wrapper {
+    width: 100%;
+    max-width: 991px;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  .top-title img {
+    max-width: 280px;
+    width: 95%;
+  }
+  .main-box {
+    box-sizing: border-box;
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px 0;
+    background: none;
+    text-align: center;
+    position: relative;
+    border-left: #ffb250 1px solid;
+    border-right: #db34aa 1px solid;
+  }
+  .main-box:before, .main-box:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #ffb250, #db34aa);
+  }
+  .main-box:before {
+    top: -1px;
+  }
+  .main-box:after {
+    bottom: -1px;
+  }
+  .main-box span {
+    font-size: 25px;
+  }
+  section[id^='modal'] {
+    background: #000;
+    color: #fff;
+    border: 2px solid #a5a5a5;
+    width: 90%;
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.4s;
+    z-index: 2;
+  }
+  section[id^='modal'] h1 {
+    text-align: center;
+    font-size: 30px;
+    line-height: 30px;
+  }
+  section[id^='modal'] ul li {
+    font-size: 18px;
+    text-align: left;
+  }
+  section[id^='modal'] a {
+    text-align: center;
+    display: block;
+    width: 80%;
+    text-decoration: none;
+    margin: 0 auto 20px;
+    padding: 10px 0;
+    color: #e5127d;
+    position: relative;
+    border-left: #ffb250 1px solid;
+    border-right: #db34aa 1px solid;
+  }
+  section[id^='modal'] a:before, section[id^='modal'] a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #ffb250, #db34aa);
+  }
+  section[id^='modal'] a:before {
+    top: -1px;
+  }
+  section[id^='modal'] a:after {
+    bottom: -1px;
+  }
+  section#modal08 {
+    text-align: center;
+  }
+}
+
+/* TB */
+@media screen and (min-width: 769px) and (max-width: 991px) {
+  .top-title img {
+    width: 90%;
+  }
+  .header #menu-list {
+    padding: 10px 0;
+  }
+  .header #menu-list ul li {
+    font-size: 23px;
+  }
+  span.list-icon {
+    font-size: 16px;
+  }
+  .main-wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .main-box {
+    width: 194px;
+    height: 194px;
+    line-height: 194px;
+    display: inline-block;
+    margin: 0 0 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    user-select: none;
+    text-align: center;
+    position: relative;
+    border-left: #ffb250 1px solid;
+    border-right: #db34aa 1px solid;
+    box-sizing: border-box;
+  }
+  .main-box:before, .main-box:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #ffb250, #db34aa);
+  }
+  .main-box:before {
+    top: -1px;
+  }
+  .main-box:after {
+    bottom: -1px;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 992px) {
+  .all-wrapper {
+    width: 100%;
+    max-width: 992px;
+    margin: 0 auto;
+  }
+  .top-title img {
+    width: 90%;
+  }
+  .header #menu-list {
+    padding: 10px 0;
+  }
+  .header #menu-list ul li {
+    font-size: 25px;
+  }
+  span.list-icon {
+    font-size: 18px;
+  }
+  .main-wrapper {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+  }
+  .main-box {
+    width: 194px;
+    height: 194px;
+    line-height: 194px;
+    display: inline-block;
+    margin: 0 0 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    user-select: none;
+    text-align: center;
+    position: relative;
+    border-left: #ffb250 1px solid;
+    border-right: #db34aa 1px solid;
+    box-sizing: border-box;
+  }
+  .main-box:before, .main-box:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #ffb250, #db34aa);
+  }
+  .main-box:before {
+    top: -1px;
+  }
+  .main-box:after {
+    bottom: -1px;
+  }
+  .main-box:hover {
+    color: #e5127d;
+  }
+  section[id^='modal'] {
+    background: #000;
+    color: #fff;
+    border: 2px solid #a5a5a5;
+    width: 530px;
+    line-height: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    position: absolute;
+    top: -160px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: 0.4s;
+    z-index: 2;
+  }
+  section[id^='modal'] h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  section[id^='modal'] ul li {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: left;
+  }
+  section[id^='modal'] p {
+    width: 80%;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    text-align: left;
+  }
+  section[id^='modal'] a {
+    display: block;
+    width: 80%;
+    text-decoration: none;
+    margin: 0 auto 20px;
+    padding: 10px 0;
+    color: #e5127d;
+    position: relative;
+    border-left: #ffb250 1px solid;
+    border-right: #db34aa 1px solid;
+  }
+  section[id^='modal'] a:before, section[id^='modal'] a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #ffb250, #db34aa);
+  }
+  section[id^='modal'] a:before {
+    top: -1px;
+  }
+  section[id^='modal'] a:after {
+    bottom: -1px;
+  }
+  section#modal08 p {
+    text-align: center;
+  }
+}

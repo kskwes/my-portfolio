@@ -1,0 +1,79 @@
+.sns-wrapper {
+  width: 650px;
+  margin: 0 auto 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sns-wrapper div {
+  width: 25%;
+}
+
+.sns-wrapper a {
+  text-decoration: none;
+  color: #333;
+  transition-duration: 0.2s;
+  display: block;
+}
+
+.sns-wrapper a:hover {
+  color: #ffffff94;
+}
+
+.sns-wrapper span {
+  display: block;
+  user-select: none;
+}
+
+.fab, .fas {
+  font-size: 80px;
+}
+
+.email {
+  cursor: pointer;
+}
+
+.sns-text {
+  width: 650px;
+  margin: 0 auto 50px;
+  font-style: italic;
+}
+
+#contact-area {
+  margin-bottom: 50px;
+}
+
+#contact-area input {
+  display: inline-block;
+  margin: 0 0 15px 10px;
+  width: 150px;
+  height: 20px;
+  font-size: 15px;
+  text-align: center;
+  line-height: 20px;
+  font-style: italic;
+  background: #ececec;
+}
+
+#contact-area textarea {
+  font-size: 20px;
+  width: 600px;
+  font-style: italic;
+  background: #ececec;
+}
+
+button {
+  display: block;
+  text-align: center;
+  width: 90px;
+  height: 40px;
+  margin: 15px auto;
+  cursor: pointer;
+  background: #655555;
+  color: #fff;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
